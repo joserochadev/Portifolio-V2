@@ -33,6 +33,8 @@ function createProjectElement(project) {
 		overlay.appendChild(deployButton)
 	}
 
+	projectItem.setAttribute('data-aos', 'fade-up')
+	projectItem.setAttribute('data-aos-duration', '2000')
 	projectItem.appendChild(overlay)
 
 	return projectItem

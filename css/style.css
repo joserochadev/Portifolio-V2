@@ -114,7 +114,7 @@ body {
 	margin-left: 1.5rem;
 }
 
-.navbar a:first-child {
+.active {
 	font-weight: bold;
 	text-decoration: underline;
 	text-underline-offset: 4px;
