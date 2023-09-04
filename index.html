@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./img/JRD.svg" type="image/x-icon" />
+
+		<!-- Links -->
+		<link rel="stylesheet" href="./css/style.css" />
+		<script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+		<title>JoséRochaDev - Portifólio</title>
+	</head>
+	<body>
+		<div class="header container">
+			<div class="logo">JoséRochaDev</div>
+			<div class="navbar">
+				<a href="#">Home</a>
+				<a href="#nav-about">Sobre Mim</a>
+				<a href="#nav-project">Projetos</a>
+				<a href="#nav-contact">Contato</a>
+			</div>
+			<!-- <button id="btn-hamburger"><i class="ph ph-list"></i></button> -->
+		</div>
+
+		<!-- <div class="nav-mobile">
+			<a href="#">Home</a>
+			<a href="#nav-about">Sobre Mim</a>
+			<a href="#nav-project">Projetos</a>
+			<a href="#nav-contact">Contato</a>
+		</div> -->
+
+		<div class="banner container">
+			<div class="side-left">
+				<div>
+					<h1>
+						<span class="hidden">José Rocha</span>
+						Desenvolvedor <span class="substring">Web</span>
+					</h1>
+					<div class="btn-container">
+						<a
+							href="https://www.linkedin.com/in/jose-rocha-dev/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<button id="btn-hire">Contrate-me</button>
+						</a>
+						<a
+							href="./cv/José Rocha - Curriculo.pdf"
+							target="_blank"
+							rel="noopener noreferrer"
+							download=""
+						>
+							<button id="btn-downloadCV">
+								Download CV <i class="ph ph-download-simple"></i>
+							</button>
+						</a>
+					</div>
+				</div>
+				<!-- <button id="btn-arrow-down"><i class="ph ph-arrow-down"></i></button> -->
+				<i class="ph ph-caret-double-down arrow-down"></i>
+			</div>
+			<div class="side-right">
+				<img src="./img/banner-img.svg" alt="" />
+			</div>
+		</div>
+
+		<div id="nav-about" class="about-container container">
+			<div class="about-info">
+				<h2>Sobre <span class="substring">mim</span></h2>
+				<p>
+					👋 Sou um entusiasta da tecnologia desde os 15 anos, quando minha curiosidade se
+					transformou em paixão pela programação. 🌐 Como desenvolvedor web freelancer,
+					transformo códigos em experiências interativas. Comecei com um curso técnico e
+					agora persigo um diploma em Ciência da Computação. 💼 Minha carreira é marcada
+					por aprendizado e projetos emocionantes, de e-commerce a plataformas de
+					aprendizado. 🚀 Busco a excelência no desenvolvimento web e valorizo a
+					colaboração e a comunicação eficaz. 📚 Além de freelancing, busco aprimoramento
+					acadêmico em Ciência da Computação. 🌟 Estou aberto a novas oportunidades e
+					colaborações inspiradoras. Vamos construir experiências online excepcionais
+					juntos! 🎉
+				</p>
+			</div>
+			<div class="about-img">
+				<img src="./img/about-img.svg" alt="" />
+			</div>
+		</div>
+
+		<div id="nav-project" class="project-container">
+			<div class="project container">
+				<h2>Meus <span class="substring">Projetos</span></h2>
+			</div>
+
+			<div class="projects-grid"></div>
+		</div>
+
+		<div id="nav-contact" class="contact-container container">
+			<div class="contact-left">
+				<h2>Tem algum projeto em <span class="substring">mente?</span></h2>
+				<img src="./img/contact-img.svg" alt="" />
+			</div>
+			<form
+				action="https://formsubmit.co/joserochadev@gmail.com"
+				method="POST"
+				class="contact-right"
+			>
+				<div class="inputs">
+					<div class="lt">
+						<label for="name">Seu Nome</label>
+						<input type="text" name="name" id="name" placeholder="Nome" />
+					</div>
+					<div class="lt">
+						<label for="">Seu Email</label>
+						<input type="email" name="email" id="email" placeholder="Email" />
+					</div>
+				</div>
+
+				<div class="lt">
+					<label for="message">Sua Mensagem</label>
+					<textarea
+						name="message"
+						id="message"
+						cols="30"
+						rows="10"
+						placeholder="Mensagem..."
+					></textarea>
+				</div>
+				<button id="btn-send-msg" type="submit">
+					Enviar Mensagem <i class="ph ph-paper-plane-tilt"></i>
+				</button>
+			</form>
+		</div>
+
+		<div class="footer-container">
+			<div class="nav">
+				<a href="#" class="text-icon">
+					<i class="ph ph-house"></i>
+					<span>Home</span>
+				</a>
+				<a href="#nav-about" class="text-icon">
+					<i class="ph ph-user-circle"></i>
+					<span>Sobre mim</span>
+				</a>
+				<a href="#nav-project" class="text-icon">
+					<i class="ph ph-browsers"></i>
+					<span>Projetos</span>
+				</a>
+				<a href="#nav-contact" class="text-icon">
+					<i class="ph ph-phone"></i>
+					<span>Contato</span>
+				</a>
+			</div>
+			<div class="media-icons">
+				<a href="https://www.linkedin.com/in/jose-rocha-dev/" target="_blank">
+					<i class="ph ph-linkedin-logo"></i>
+				</a>
+				<a href="https://github.com/joserochadev" target="_blank">
+					<i class="ph ph-github-logo"></i>
+				</a>
+			</div>
+		</div>
+
+		<script src="./js/particles.js"></script>
+		<script src="./js/script.js"></script>
+		<script src="./js/projectList.js"></script>
+
+		<script>
+			// import { createProjectElement } from './js/script.js'
+			// import { projectslist } from './js/projectlist.js'
+
+			const btnMenu = document.querySelector('#btn-hamburger')
+			const navbar = document.querySelector('.nav-mobile')
+			const form = document.querySelector('.contact-right')
+
+			form.addEventListener('submit', (e) => {
+				e.preventDefault()
+
+				if (e) {
+					alert('Email enviado com sucesso!!')
+					form.name.value = ''
+					form.email.value = ''
+					form.message.value = ''
+				} else {
+					alert('ERRO!! Não conseguimos enviar seu email :(')
+				}
+			})
+
+			// btnMenu.addEventListener('click', () => {
+			// 	navbar.classList.toggle('show')
+			// })
+
+			const projectsGrid = document.querySelector('.projects-grid')
+			// Adicionando elementos de projeto à grade
+			projectslist.forEach((project) => {
+				const projectElement = createProjectElement(project)
+				projectsGrid.appendChild(projectElement)
+			})
+		</script>
+	</body>
+</html>
